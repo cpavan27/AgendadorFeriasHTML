@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./JS/Controller.js" type="module"></script>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/fonts.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/body.css">
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <h1>Feriasnator 3.000</h1>
+      <h2>Sua ferramentar para facilitar encontrar a melhor data para começar suas férias 🏝</h2>
+    </header>
+    <main>
+      <section class="calc">
+        <form class="calc_form">
+          <fieldset>
+            <div class="calc_form_cidade">
+              <label for="cidade">Cidade da empresa</label>
+              <input type="search" name="cidade" id="cidade">
+            </div>
+            <div class="calc_form_mes">
+              <label for="mes">Escolha o mês de preferência:</label>    
+              <select name="meses" id="mes">
+                <option value="">--Selecione o mes das férias--</option>
+                <option value="0">Jan</option>
+                <option value="1">Fev</option>
+                <option value="2">Mar</option>
+                <option value="3">Abr</option>
+                <option value="4">Mai</option>
+                <option value="5">Jun</option>
+                <option value="6">Jul</option>
+                <option value="7">Ago</option>
+                <option value="8">Set</option>
+                <option value="9">Out</option>
+                <option value="10">Nov</option>
+                <option value="11">Dez</option>
+              </select>
+            </div>
+            <div class="calc_form_qnt_dias">
+              <p>Quantos dias de férias ⇓</p>
+              <input type="radio" name="qntDias" id="dez_dias" value="10" checked>
+              <label for="dez_dias">10 Dias</label>
+              <input type="radio" name="qntDias" id="quin_dias" value="15">
+              <label for="quin_dias">15 Dias</label>
+              <input type="radio" name="qntDias" id="vint_dias" value="20">
+              <label for="vint_dias">20 Dias</label>
+              <input type="radio" name="qntDias" id="trin_dias" value="30">
+              <label for="trin_dias">30 Dias</label>
+            </div>
+          </fieldset>
+        </form>
+        <button id="calcular">Calcular</button>
+      </section>
+      <!-- //*************  -->
+      <section id="resultado" class="resultado"></section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+body{
+  background-color: #0F6292;
+}
+main{  
+  padding: 15px; 
+}
+.calc{
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Quantico', sans-serif;
+  font-size: 1.2rem;
+  color: aliceblue;
+  margin-bottom: 15px;
+}
+.calc_form{
+  border: solid 1px white;
+  border-radius: 15px;
+  background-color: #2E8A99;
+  padding: 10px;
+}
+.calc_form label{
+  font-family: 'Quantico', sans-serif;
+  color: aliceblue;
+}
+
+
+/* -------------------------------------------------------- */
+
+.resultado{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: solid 1px white;
+  border-radius: 15px;
+  background-color: #84A7A1;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  font-family: 'Goldman', cursive;
+}
+.calendario{
+  width: 90%;
+  background-color: aliceblue;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.calendario_heder{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  
+}
+.calendario_heder h1{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.calendario_body{
+  width: 90%;
+  box-sizing: border-box;
+}
+.calendario_dias{
+  width: 100%;
+  display: grid;
+  gap: 1.5px;
+  grid-template-columns: repeat(7, 1fr);
+}
+.calendario_dias_week{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.calendario_dias_dia{
+  border: solid 1px black;
+  padding: 2px;
+}
+.calendario_fds_feriado_destc{
+  background-color: #16FF00;
+}
+.calendario_feias_destc{
+  background-color: #FFED00;
+}
